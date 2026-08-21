@@ -13,7 +13,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <craftbukkit.version>1.21.11-R0.1-SNAPSHOT</craftbukkit.version>
         <placeholderapi.version>2.11.5</placeholderapi.version>
-        <citizensapi.version>${project.version}</citizensapi.version>
+        <!-- JPW maintenance fork: exact b4120 API plus the deregistration contract required by
+             ItemsAdder 4.0.17. Keep this independently versioned so Maven cannot resolve a
+             mutable upstream SNAPSHOT with a different API surface. -->
+        <citizensapi.version>2.0.41-jpw.1</citizensapi.version>
         <worldguard.version>7.1.0-SNAPSHOT</worldguard.version>
     </properties>
     <repositories>
