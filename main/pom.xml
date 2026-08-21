@@ -17,7 +17,7 @@
              ItemsAdder 4.0.17. Keep this independently versioned so Maven cannot resolve a
              mutable upstream SNAPSHOT with a different API surface. -->
         <citizensapi.version>2.0.41-jpw.1</citizensapi.version>
-        <worldguard.version>7.1.0-SNAPSHOT</worldguard.version>
+        <worldguard.version>7.0.18</worldguard.version>
     </properties>
     <repositories>
         <repository>
@@ -128,6 +128,12 @@
         <dependency>
             <groupId>com.sk89q.worldguard</groupId>
             <artifactId>worldguard-bukkit</artifactId>
+            <version>${worldguard.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sk89q.worldguard</groupId>
+            <artifactId>worldguard-core</artifactId>
             <version>${worldguard.version}</version>
             <scope>provided</scope>
         </dependency>
